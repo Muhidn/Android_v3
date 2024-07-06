@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    tools:context=".Activities.HomeActivity">
+
+<!--Add the search functionality here-->
+    <EditText
+        android:id="@+id/Type"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Type"
+        android:inputType="text"
+        android:padding="10dp"
+        android:layout_marginTop="15dp"
+        />
+
+    <EditText
+        android:id="@+id/color"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="color"
+        android:inputType="text"
+        android:padding="10dp"
+        android:layout_marginTop="15dp"
+        />
+
+    <EditText
+        android:id="@+id/price"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="price"
+        android:inputType="number"
+        android:padding="10dp"
+        android:layout_marginTop="15dp"
+        />
+
+    <EditText
+        android:id="@+id/year"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="year"
+        android:inputType="number"
+        android:padding="10dp"
+        android:layout_marginTop="15dp"
+        />
+    <Button
+        android:id="@+id/search"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="search"
+        android:onClick="searchMe"
+        android:layout_marginTop="16dp"/>
+<!-- HERE THE RECYCLER MUST COME IN-->
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recycler"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"/>
+</LinearLayout>

@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    android:gravity="center"
+    tools:context=".Activities.RegisterActivity">
+
+    <EditText
+        android:id="@+id/RegisterEmail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Email"
+        android:inputType="textEmailAddress"
+        android:padding="10dp" />
+
+    <EditText
+        android:id="@+id/RegisterPassword"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Password"
+        android:inputType="textPassword"
+        android:padding="10dp"
+        android:layout_marginTop="16dp" />
+
+    <Button
+        android:id="@+id/btnRegister"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Register"
+        android:onClick="reRegister"
+        android:layout_marginTop="16dp" />
+
+    <TextView
+        android:id="@+id/ViewLogin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="viewLogin"
+        android:text="Already have an account? Login"
+        android:textColor="@android:color/holo_blue_dark"
+        android:layout_marginTop="16dp" />
+
+
+</LinearLayout>

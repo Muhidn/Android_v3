@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    >
+    <TextView
+        android:id="@+id/ViewCarType"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Type"
+        android:textStyle="bold"
+        />
+    <TextView
+        android:id="@+id/ViewCarColor"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Color"
+        />
+
+    <TextView
+        android:id="@+id/ViewCarPrice"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Price" />
+
+    <TextView
+        android:id="@+id/ViewCarYear"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Year"
+        />
+
+
+</LinearLayout>
